@@ -1,0 +1,29 @@
+<style>
+    
+    .bold {
+        color: orange;
+    }
+
+    .pred-good {
+        color: green;
+        font-size: 4rem;
+    }
+    
+    .pred-defect {
+        color: red;
+        font-size: 4rem;
+    }
+
+</style>
+
+
+    
+<div hx-trigger="afterFadeOut">
+    <h1>Uploaded successfully</h1>
+    <p> File uploaded successfully</p>
+    <p>File Name: {{name}}</p>
+    <p class="{% if prediction == 'Good' %} pred-good {% else %} pred-defect {% endif %};"> Your Tyre is {{prediction}}</p>
+    <p> Estimated Accuracy: {{score}}%</p>
+    <button  onclick="location.reload();"> check another tyre</button>
+</div>
+

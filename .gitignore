@@ -1,0 +1,38 @@
+# Virtual environment
+venv/
+
+# Compiled Python files
+__pycache__/
+
+# Byte-compiled Python files
+*.pyc
+
+# Cache and log files
+*.log
+*.cache
+
+# Editor-specific files
+.vscode/
+.idea/
+
+# Local configuration files
+.env
+*.cfg  
+
+# Package and distribution files
+*.egg-info/
+dist/
+build/
+
+# System and temporary files
+Thumbs.db
+.DS_Store
+*.swp
+*~
+
+# Flask-specific cache and session files
+flask_session/
+
+
+# Environment-specific files
+*.env

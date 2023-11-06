@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tyre Quality Test</title>
+        <link rel="stylesheet" href='/static/src/main.css' />
+        <script src="https://unpkg.com/htmx.org@1.9.6" integrity="sha384-FhXw7b6AlE/jyjlZH5iHa/tTe9EpJ1Y55RjcgPbjeWMskSxZt1v9qkxLJWNJaGni" crossorigin="anonymous"></script>
+    </head>
+   
+    <body>
+        <form hx-encoding='multipart/form-data' hx-post='/upload' 
+        _='on htmx:xhr:progress(loaded, total) set #progress.value to (loaded/total)*100'>
+            <h2 class="text-7xl text-blue-900">Upload an Image of your Tyre</h2>
+            <input type='file' name='file'>
+            <button>
+                Upload
+            </button>
+            <progress id='progress' value='0' max='100'></progress>
+        </form>
+    </body>
+    <footer>
+        <p> Please note that the tire quality prediction provided here is for informational purposes only and should not be used as the sole basis for making decisions about your tires. 
+            <br>For accurate tire assessment, consult with a qualified professional or your local tire service center. 
+            Safety always comes first.</p>
+    </footer>
+</html>

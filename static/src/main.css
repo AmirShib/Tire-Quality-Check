@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    background: rgb(220, 244, 249);
+    margin-top: 50px;
+    }
+
+h2 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.5em;
+    color: rgb(9, 9, 9);
+    }
+      
+footer {
+        color: rgb(9, 9, 9);
+        padding: 10px; 
+        text-align: center; 
+        position: absolute; 
+        bottom: 0;
+        width: 90%;
+    }
