@@ -1,0 +1,15 @@
+<style> 
+    .centered {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+</style>
+
+<div class = "centered" hx-target="this" hx-swap="outerHTML">
+    <img src="saliency/maps/{{source}}" alt = "The Resulting image"/>
+    <button hx-get="/showImg/saliency/{{source}}">show Image</button>
+    <p> The red parts of the image endicate the important parts for the classification</P>
+</div>
